@@ -1,0 +1,88 @@
+/* style for header */
+header{
+    background-color: teal;
+    color: rgb(238, 243, 227);
+    text-align: center;
+
+}
+/* style for nav bar*/
+ nav{
+    width:100%;
+    background-color: teal;
+    display: flex;
+    justify-content: flex-start;
+} 
+/* style for nav bar attributes*/
+nav a{
+    color:rgb(238, 243, 227);
+    background-color: teal;
+    padding: 20px 20px;
+    margin: 20px;
+    text-align: flex-start;
+    text-decoration: none;
+    
+}
+/* style for about me section */
+.about-me{
+    width:800px;
+    height: 600px;
+    border-style: double;
+    border-width: 1px;
+    border-color: black;
+    margin: 40px;
+    padding: 40px;
+    float: left;
+    flex-wrap: flex;
+}
+.about-me img{
+    float:right;
+}
+/* style for project list*/
+.project-list{
+   
+    flex:4;
+    /* background-color:black; */
+    padding: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    
+}
+/* style for content of project list */
+.project-card{
+    justify-content: flex-end;
+    width:200x;
+    height:200px; 
+  border-style: solid;
+  border-width: 1px;
+  /* box-sizing: 100px; */
+  padding: 40px;
+  flex: 0 0 100px; 
+  /* box-shadow: 100px 10px 5px #aaaaaa; */
+  margin: 20px;
+  
+}
+.project-card #p1{
+    width:300x;
+    height:200px; 
+}
+/* size of image in project-card */
+.project-card img{
+    width:75%;
+    height:50%;
+}
+/* creeates row for project card */
+.row {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    margin-left: -1.5rem;
+    margin-right: -1.5rem;
+  }
+  /* adjusts layout according to width of media screen */
+@media screen and (max-width: 768px) {
+    main,
+    nav {
+      flex-direction: column;
+    }
+  }
